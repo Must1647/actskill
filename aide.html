@@ -1,130 +1,18 @@
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Centre d'aide — ACTSKILL</title>
-<style>
-  :root { --fond:#0B0F14; --surface:#151B23; --bordure:#2A3441;
-           --texte:#F2F5F8; --doux:#8794A3; --orange:#FF5A1F; }
-  * { box-sizing:border-box; margin:0; padding:0; }
-  body { background:var(--fond); color:var(--texte); line-height:1.7;
-          font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
-          padding:40px 20px; }
-  main { max-width:760px; margin:0 auto; }
-  h1 { font-size:30px; letter-spacing:-.5px; margin-bottom:6px; }
-  .sous { color:var(--doux); font-size:14px; margin-bottom:26px; }
-  h2 { font-size:13px; text-transform:uppercase; letter-spacing:.8px;
-        color:var(--orange); margin:34px 0 12px; }
-  nav { background:var(--surface); border:1px solid var(--bordure);
-         border-radius:12px; padding:14px 16px; font-size:14px; }
-  a { color:var(--orange); text-decoration:none; }
-  a:hover { text-decoration:underline; }
-  details { background:var(--surface); border:1px solid var(--bordure);
-             border-radius:12px; margin-bottom:10px; overflow:hidden; }
-  summary { padding:15px 18px; cursor:pointer; font-weight:650;
-             font-size:15px; list-style:none; }
-  summary::-webkit-details-marker { display:none; }
-  summary::after { content:'+'; float:right; color:var(--orange);
-                    font-weight:700; font-size:19px; line-height:1.2; }
-  details[open] summary::after { content:'\2212'; }
-  summary:hover { background:#1E2630; }
-  summary:focus-visible { outline:3px solid var(--orange); outline-offset:-3px; }
-  .reponse { padding:0 18px 16px; border-top:1px solid var(--bordure); }
-  .reponse p { font-size:14.5px; color:#DCE3EA; margin-top:12px; }
-  code { background:#1E2630; padding:2px 6px; border-radius:5px; font-size:13px; }
-  .urgence { background:var(--surface); border-left:3px solid var(--orange);
-              border-radius:10px; padding:16px; margin:22px 0; font-size:14.5px; }
-  footer { margin-top:44px; padding-top:20px; border-top:1px solid var(--bordure);
-            color:var(--doux); font-size:13px; }
-</style>
-</head>
-<body>
-<main>
-  <h1>Centre d'aide</h1>
-  <p class="sous">ACTSKILL — 61 exercices, 2 programmes, 20 séances</p>
-
-  <nav><a href="#demarrer">Démarrer</a> · <a href="#progression">Progression</a> · <a href="#entrainement">Entraînement</a> · <a href="#compte">Compte</a> · <a href="#confidentialite">Confidentialité</a> · <a href="#bientot">Pas encore disponible</a></nav>
-
-  <div class="urgence"><strong>Santé.</strong> Arrête un exercice en cas de douleur, d'essoufflement inhabituel, d'étourdissement ou de malaise. ACTSKILL propose des contenus informatifs et ne remplace pas l'avis d'un professionnel de la santé.</div>
-
-  <h2 id="demarrer">Démarrer</h2>
-  <details>
-    <summary>Comment commencer</summary>
-    <div class="reponse"><p>Crée ton compte, puis réponds aux <strong>deux questions</strong> du premier lancement : ton niveau et ton objectif. Tu peux aussi appuyer sur « Passer pour l'instant » et les renseigner plus tard.</p><p>Ensuite, depuis l'accueil, appuie sur <strong>Commencer</strong> : la séance du jour s'ouvre avec la liste des exercices à réaliser, dans l'ordre.</p></div>
-  </details>
-  <details>
-    <summary>Quels programmes existent</summary>
-    <div class="reponse"><p>ACTSKILL propose <strong>deux programmes</strong>, tirés du guide 15SFIT :</p><p><strong>15SFIT — 40-Day Full Body Challenge</strong> : 15 séances complètes réparties sur 40 jours. Échauffement, circuit principal, finisher Tabata, retour au calme.</p><p><strong>15SFIT Phase 2 — Programme complet</strong> : 5 séances.</p><p>Les deux se trouvent dans l'onglet <strong>Programmes</strong>.</p></div>
-  </details>
-  <details>
-    <summary>Combien de temps dure une séance</summary>
-    <div class="reponse"><p>Entre 30 et 37 minutes selon la séance, découpées en quatre blocs : échauffement (5 min), bloc principal (16 à 22 min), finisher (4 min), retour au calme (5 à 6 min).</p></div>
-  </details>
-
-  <h2 id="progression">Progression</h2>
-  <details>
-    <summary>Pourquoi ma progression affiche zéro</summary>
-    <div class="reponse"><p>C'est normal au début : la progression compte les séances que tu as <strong>terminées</strong>, pas celles que tu as ouvertes.</p><p>Pour qu'une séance compte, il faut appuyer sur <strong>Terminer la séance</strong>, en bas de la liste d'exercices.</p></div>
-  </details>
-  <details>
-    <summary>Terminer une séance correctement</summary>
-    <div class="reponse"><p>Ouvre l'onglet <strong>Exercices</strong>, fais la séance, puis appuie sur <strong>Terminer la séance</strong>.</p><p>Sans connexion internet, la séance n'est pas enregistrée et un message te le dit. Réessaie une fois connecté.</p></div>
-  </details>
-  <details>
-    <summary>À quoi servent les badges</summary>
-    <div class="reponse"><p>Les badges marquent des étapes de constance. Ils ne sont visibles que par toi : il n'y a aucun classement, aucune comparaison avec d'autres personnes, et aucune série à ne pas rompre. Une semaine manquée ne fait rien perdre.</p></div>
-  </details>
-
-  <h2 id="entrainement">Entraînement</h2>
-  <details>
-    <summary>S'entraîner en sécurité</summary>
-    <div class="reponse"><p>Chaque exercice affiche une consigne de sécurité. Lis-la avant la première exécution, même si le mouvement paraît simple.</p><p>Arrête immédiatement en cas de douleur, d'essoufflement inhabituel, d'étourdissement ou de malaise.</p><p>Si tu as une condition préexistante, une blessure récente, ou si tu reprends après une longue interruption, parles-en à un professionnel de la santé avant de commencer. ACTSKILL ne fournit ni diagnostic ni traitement.</p></div>
-  </details>
-  <details>
-    <summary>Trouver un exercice</summary>
-    <div class="reponse"><p>L'onglet <strong>Exercices</strong> donne accès au catalogue : <strong>61 exercices</strong>, chacun avec ses instructions et sa consigne de sécurité. Tape un mot dans la barre de recherche pour filtrer la liste.</p></div>
-  </details>
-  <details>
-    <summary>Mettre un exercice en favori</summary>
-    <div class="reponse"><p>Depuis la fiche d'un exercice, appuie sur l'icône de favori. Tu retrouves tes favoris dans l'onglet <strong>Profil</strong>, sous « Mes favoris ».</p></div>
-  </details>
-
-  <h2 id="compte">Compte</h2>
-  <details>
-    <summary>ACTSKILL ne demande jamais ton mot de passe</summary>
-    <div class="reponse"><p><strong>ACTSKILL ne te demandera jamais ton mot de passe</strong> — ni par courriel, ni par message, ni dans le formulaire de commentaires. Si quelqu'un te le demande en se présentant comme le support, il ne s'agit pas de nous.</p></div>
-  </details>
-  <details>
-    <summary>Envoyer un commentaire</summary>
-    <div class="reponse"><p>Depuis l'onglet <strong>Profil</strong>, écris dans le champ de commentaire puis appuie sur <strong>Envoyer mon commentaire</strong>. C'est le moyen le plus direct de signaler un problème.</p></div>
-  </details>
-  <details>
-    <summary>Supprimer ton compte</summary>
-    <div class="reponse"><p>Depuis l'onglet <strong>Profil</strong>, appuie sur <strong>Supprimer mon compte</strong>, tout en bas de l'écran. Une confirmation t'est demandée.</p><p>La suppression est <strong>immédiate</strong> et ne passe par personne : ton compte part, et avec lui ton historique de séances, tes favoris, tes badges, tes préférences, ton questionnaire de démarrage, tes commentaires et ton profil.</p><p>Trois catégories de lignes techniques survivent, mais <strong>détachées</strong> : elles ne permettent plus de remonter à toi.</p></div>
-  </details>
-
-  <h2 id="confidentialite">Confidentialité</h2>
-  <details>
-    <summary>Tes données</summary>
-    <div class="reponse"><p>ACTSKILL conserve ton adresse courriel, ton nom affiché si tu en donnes un, tes séances terminées, ton niveau et ton objectif, tes favoris, tes badges, tes préférences de rappels et tes commentaires.</p><p>Rien n'est vendu, rien n'est partagé à des fins publicitaires, aucun pistage n'est effectué, et l'application n'affiche aucune publicité.</p><p>Chaque personne ne voit que ses propres données : l'isolation est appliquée dans la base de données elle-même, pas seulement dans l'application.</p><p>L'application ne collecte ni ta localisation, ni tes contacts, ni ton poids, ni photo. Le détail figure dans la politique de confidentialité.</p></div>
-  </details>
-
-  <h2 id="bientot">Ce qui n'existe pas encore</h2>
-  <details>
-    <summary>Les rappels ne sont pas encore envoyés</summary>
-    <div class="reponse"><p>Tes préférences de rappels peuvent être enregistrées, mais <strong>aucune notification n'est envoyée aujourd'hui</strong> : l'envoi n'est pas encore en place.</p><p>On préfère l'écrire ici plutôt que de te laisser attendre une notification qui n'arrivera pas.</p></div>
-  </details>
-  <details>
-    <summary>Pas d'écran nutrition, pas de vidéos</summary>
-    <div class="reponse"><p>L'application ne contient <strong>ni écran nutrition, ni capsules vidéo</strong>. Si tu as lu le contraire quelque part, c'était une version antérieure de cette page : elle décrivait un plan, pas l'application livrée.</p><p>Les écrans réellement présents sont : Accueil, Exercices, Détail d'un exercice, Catalogue, Programmes, Progression et Profil.</p></div>
-  </details>
-
-  <h2>Nous contacter</h2>
-  <p>Écris à Confortplus365@gmail.com. Le formulaire de commentaires de l'onglet Profil fonctionne aussi et arrive directement chez nous.</p>
-
-  <footer>ACTSKILL — Centre d'aide · Mis à jour le 2026-08-20 · Chiffres vérifiés en base ce jour-là.<br>
-  Cette page a été corrigée à la main : elle annonçait 64 exercices, 7 programmes, un écran nutrition et des vidéos qui n'existent pas. Ne pas la régénérer avec <code>generer_aide.py</code> sans y reporter ces corrections.</footer>
-</main>
-</body>
-</html>
+<!doctype html><html lang="fr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>ACTSKILL — Aide</title><style>:root{--bg:#F5F7FB;--surface:#FFF;--fg:#101A35;--muted:#4B5875;--line:#D8DEEA;--accent:#00A152}
+@media(prefers-color-scheme:dark){:root{--bg:#0A1024;--surface:#101A35;--fg:#EEF2FB;--muted:#93A2C4;--line:#1E2C50;--accent:#00E676}}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--fg);font:400 17px/1.6 "Segoe UI",Roboto,Helvetica,Arial,sans-serif}
+.wrap{max-width:720px;margin:0 auto;padding:28px 16px 64px}.brand{font:italic 800 26px/1 Arial,sans-serif;letter-spacing:-.5px}.brand b{color:var(--accent)}
+nav{display:flex;gap:6px;flex-wrap:wrap;margin:18px 0 8px;padding-bottom:12px;border-bottom:1px solid var(--line)}
+nav a{font-size:14px;font-weight:600;color:var(--muted);text-decoration:none;padding:7px 12px;border-radius:8px}nav a.on{background:var(--accent);color:#fff}
+h1{font-size:30px;line-height:1.15;margin:20px 0 0}h2.lang{font-size:22px;margin:40px 0 0;padding-top:20px;border-top:3px solid var(--accent)}
+.upd{color:var(--muted);font-size:14px;margin:6px 0 20px}section{border-top:1px solid var(--line);padding:14px 0}h3{font-size:18px;margin:0 0 6px}p{margin:0;max-width:65ch}
+.mail{font-weight:600;color:var(--accent);word-break:break-all}footer{margin-top:32px;color:var(--muted);font-size:14px}a{color:var(--accent)}</style></head><body><div class="wrap">
+<div class="brand">ACT<b>SKILL</b></div><nav><a href="index.html" class=on>Accueil / Home</a><a href="politique_confidentialite.html">Politique de confidentialité</a><a href="conditions_utilisation.html">Conditions d&#x27;utilisation</a><a href="avis_sante.html">Avis santé et sécurité</a><a href="suppression_compte.html">Supprimer votre compte</a></nav><h1>Informations légales et aide</h1>
+<p class="upd">Pages publiques de l'application ACTSKILL (programme 15SFIT). Chaque page est en français puis en anglais.</p>
+<section><h3>Politique de confidentialité / Privacy policy</h3><p><a href="politique_confidentialite.html">politique_confidentialite.html</a></p></section>
+<section><h3>Conditions d'utilisation / Terms of use</h3><p><a href="conditions_utilisation.html">conditions_utilisation.html</a></p></section>
+<section><h3>Avis santé et sécurité / Health notice</h3><p><a href="avis_sante.html">avis_sante.html</a></p></section>
+<section><h3>Supprimer votre compte / Delete your account</h3><p><a href="suppression_compte.html">suppression_compte.html</a></p></section>
+<section><h3>Support</h3><p>Écrivez-nous / Write to us: <span class="mail">Confortplus365@gmail.com</span>. Réponse sous 2 jours ouvrés / within 2 business days.</p></section>
+<footer>ACTSKILL · <span class="mail">Confortplus365@gmail.com</span></footer></div></body></html>
