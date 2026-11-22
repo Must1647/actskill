@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>ACTSKILL – Adresse confirmée</title>
+<style>
+  body{margin:0;min-height:100vh;display:flex;align-items:center;justify-content:center;background:#0A1024;color:#fff;font-family:system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif}
+  .card{max-width:420px;margin:24px;padding:32px 28px;background:#111a36;border-radius:18px;text-align:center;box-shadow:0 10px 30px rgba(0,0,0,.35)}
+  .logo{font-weight:800;letter-spacing:.08em;color:#00E676;font-size:22px;margin-bottom:18px}
+  .ok{width:64px;height:64px;border-radius:50%;background:#00E676;color:#0A1024;font-size:36px;line-height:64px;margin:0 auto 18px;font-weight:700}
+  .err{background:#ff6b6b;color:#fff}
+  h1{font-size:22px;margin:0 0 10px}
+  p{margin:6px 0;color:#c9d2ea;line-height:1.45}
+  .alt{margin-top:18px;padding-top:14px;border-top:1px solid #24305a;font-size:14px}
+  a.btn{display:inline-block;margin-top:20px;padding:12px 22px;border-radius:999px;background:#00E676;color:#0A1024;text-decoration:none;font-weight:700}
+</style>
+</head>
+<body>
+<main class="card">
+  <div class="logo">ACTSKILL</div>
+  <div id="icon" class="ok">✓</div>
+  <h1 id="title">Adresse e-mail confirmée</h1>
+  <p id="msg">Votre compte est prêt. Retournez dans l'application ACTSKILL et connectez-vous avec votre e-mail et votre mot de passe.</p>
+  <div class="alt" id="alt">
+    <p><strong>EN</strong> – Email confirmed. Go back to the ACTSKILL app and sign in.</p>
+    <p><strong>ES</strong> – Correo confirmado. Vuelve a la app ACTSKILL e inicia sesión.</p>
+    <p dir="rtl"><strong>AR</strong> – تم تأكيد بريدك الإلكتروني. عُد إلى تطبيق ACTSKILL وسجّل الدخول.</p>
+  </div>
+  <a class="btn" href="https://play.google.com/store/apps/details?id=com.actskill.actskill">Ouvrir ACTSKILL</a>
+</main>
+<script>
+(function(){
+  var raw = (location.hash || '').replace(/^#/, '') + '&' + (location.search || '').replace(/^\?/, '');
+  var p = new URLSearchParams(raw);
+  // Ne jamais garder de jeton dans la barre d'adresse.
+  if (location.hash || location.search) { history.replaceState(null, '', location.pathname); }
+  if (p.get('error') || p.get('error_code')) {
+    document.getElementById('icon').className = 'ok err';
+    document.getElementById('icon').textContent = '!';
+    document.getElementById('title').textContent = 'Lien expiré ou déjà utilisé';
+    document.getElementById('msg').textContent = "Si vous avez déjà cliqué sur ce lien, votre adresse est sans doute confirmée : essayez de vous connecter dans l'application. Sinon, demandez un nouvel e-mail depuis l'application.";
+    document.getElementById('alt').innerHTML = '<p><strong>EN</strong> – This link has expired or was already used. Try signing in to the app, or request a new email.</p>';
+  }
+})();
+</script>
+</body>
+</html>
